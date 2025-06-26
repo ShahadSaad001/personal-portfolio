@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+:root {
+  --background: #fef5e4;
+  --accent-1: #ffcfcf;
+  --accent-2: #cce9e5;
+  --accent-3: #ecc3df;
+  --accent-4: #f7ebb2;
+  --accent-5: #fff1dc;
+  --text-color: #222222;
+  --border-color: #aaaaaa;
+  --border-radius: 8px;
+  --card-shadow: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: "Bricolage Grotesque", "Segoe UI", sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--accent-5);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1rem 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 6px 10px;
+  margin: 4px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--accent-1);
+}
+
+header div.contact-info i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+header a {
+  color: var(--text-color);
+}
+
+p {
+  text-align: center;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: white;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background-color: var(--accent-2);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px var(--card-shadow);
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+}
+
+.skill-card i,
+.skill-card img,
+.skill-card iconify-icon {
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: var(--text-color);
+}
+
+footer {
+  background-color: var(--accent-5);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1rem 2rem;
+  margin: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  box-shadow: 0 2px 5px var(--card-shadow);
+}
