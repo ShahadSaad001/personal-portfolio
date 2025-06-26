@@ -13,4 +13,4 @@ cd your-portfolio
 
 2. Open `index.html` in your favorite browser to view the website locally.
 
-3.(Optional) Deploy the site on GitHub Pages or any static hosting platform.
+3. (Optional) Deploy the site on GitHub Pages or any static hosting platform.
